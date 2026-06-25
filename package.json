@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node src/server.js",
-    "build": "node --check server.js && node --check nocrm.js"
+    "dev": "node server.js",
+    "build": "node --check server.js && node --check nocrm.js",
     "start": "node server.js"
   },
   "dependencies": {
