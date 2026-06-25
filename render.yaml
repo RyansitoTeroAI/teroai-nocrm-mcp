@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: teroai-nocrm-mcp
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NOCRM_SUBDOMAIN
+        value: teroai
+      - key: NOCRM_TOKEN_TYPE
+        value: api_key
+      - key: NOCRM_TOKEN
+        sync: false
